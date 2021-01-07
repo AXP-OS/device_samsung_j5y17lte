@@ -67,7 +67,6 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -103,9 +102,6 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
-
-# Vendor separation
-TARGET_COPY_OUT_VENDOR := vendor
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
