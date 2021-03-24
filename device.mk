@@ -94,3 +94,6 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/universal7870-common/device-common.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/j5y17lte/j5y17lte-vendor.mk)
+
+# Enable extendrom
+$(call inherit-product-if-exists, vendor/extendrom/config/common.mk)
