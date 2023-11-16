@@ -90,6 +90,14 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(DEVICE_PATH)/vendor_prop.mk
 
+# APK signing certificate
+# note: actually will use releasekey as testkey links to it
+# while building failing always when using anything else then testkey..
+PRODUCT_DEFAULT_DEV_CERTIFICATE := user-keys/releasekey
+
+# will generate target file META/otakeys.txt with content:
+PRODUCT_OTA_PUBLIC_KEYS := user-keys/releasekey.x509.pem
+
 # Inherit from common
 $(call inherit-product, device/samsung/universal7870-common/device-common.mk)
 
