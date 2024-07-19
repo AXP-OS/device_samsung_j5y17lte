@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
 # APK signing certificate
 # note: actually will use releasekey as testkey links to it
 # while building failing always when using anything else then testkey..
-PRODUCT_DEFAULT_DEV_CERTIFICATE := user-keys/releasekey
+# will be set by vendor/axp: PRODUCT_DEFAULT_DEV_CERTIFICATE := user-keys/releasekey
 
 # will generate target file META/otakeys.txt with content:
 PRODUCT_OTA_PUBLIC_KEYS := user-keys/releasekey.x509.pem
