@@ -65,3 +65,6 @@ WIFI_BAND                        := 802_11_ABG
 
 # inherit from the proprietary version
 -include vendor/samsung/j5y17lte/BoardConfigVendor.mk
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_DEBUG_INFO := false
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
